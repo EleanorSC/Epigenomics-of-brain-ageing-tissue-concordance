@@ -1,0 +1,10 @@
+
+## What this app contains
+This app compiles individual CpG sites (Illumina 450K/EPIC probe IDs) for which a validated correlation coefficient (|r| or |rho| > 0.6) has been reported between DNA methylation in brain gray matter and a peripheral surrogate tissue (whole blood or buccal epithelium), using paired/matched samples from the same individuals. It is an interactive replacement for the equivalent Excel workbook, with the same underlying data.
+
+## Tabs in this app
+CpG Database — the primary filterable table: 2,937 gene-annotated CpG × tissue-pair rows (chromosome, position, gene, promoter/intragenic context, CpG-island relation, tissue pair, correlation value, source).
+Gene Summary — one row per gene (815 genes), showing how many qualifying CpGs exist for that gene, the strongest correlation found, and which tissue pairs/contexts are covered. Click a row here to jump straight to that gene's CpGs in the CpG Database tab.
+Visualize — interactive charts (Zissou1 palette) that update live as you apply filters on the CpG Database tab.
+Curated Examples — 12 individually verified high-correlation CpGs from other primary cross-tissue methylation resources (BECon, IMAGE-CpG-related literature, Essex/Exeter tool as cited in secondary EWAS papers) that could not be bulk-downloaded but are documented with exact values in peer-reviewed text, including SALIVA-brain examples not covered by the two bulk-downloaded sources.
+Access Guide — direct links and usage notes for all five primary brain-peripheral tissue methylation correlation resources, so you can look up any additional target gene not already listed here.
