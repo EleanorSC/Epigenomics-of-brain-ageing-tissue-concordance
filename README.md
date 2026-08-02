@@ -12,9 +12,9 @@ This repository contains two scripts with distinct purposes:
 
 ---
 
-# 1. Database Data Extraction
+## 1. Database Data Extraction
 
-## `database_extract_source_data.py`
+### `database_extract_source_data.py`
 
 This script extracts and harmonises data from the original published supplementary tables and generates the source CSV files used by the database.
 
