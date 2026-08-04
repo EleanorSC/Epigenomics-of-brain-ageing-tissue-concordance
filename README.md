@@ -14,13 +14,16 @@ This repository curates a database of 2,937 CpG-site correlations between periph
 
 
 <img width="2440" height="1620" alt="image" src="https://github.com/user-attachments/assets/5fa73741-29bf-4576-9abb-1bedd274e973" />
-
+## Figure 1. Interactive Database
 
 The database integrates all published human studies (through 2026) that provide genome-wide, CpG-level cross-tissue DNA methylation correlations between matched brain and peripheral tissues in a format suitable for systematic extraction. At the time of compilation, this comprised five primary resources: Hannon et al. (2015), Edgar et al. (2017), Braun et al. (2019), Sommerer et al. (2022), and Nishitani et al. (2023). Other blood–brain methylation studies exist but either examined limited candidate loci, did not publish genome-wide CpG-level concordance statistics, or did not provide supplementary data amenable to systematic extraction.
 
 All 970 unique qualifying CpG sites (r/ρ > 0.6) are annotated with gene, chromosomal position (hg19), genomic context, and source study. Includes Python scripts to reproduce the full figure set: correlation distributions, tissue-pair comparisons, chromosomal and genomic-context breakdowns, top-gene rankings, and a genome-wide Manhattan-style plot of individual CpG sites — supporting research into reliable peripheral biomarkers of brain ageing and biological aging clocks
 
 In the database, each row represents a distinct tissue-pair comparison (not just a CpG site). For some CpGs therefore, there will be multiple reported Pearson r-values depending on what correlations are reported; e.g. Hannon et al.'s blood-brain dataset tested correlations between blood methylation and methylation in three separate brain regions — entorhinal cortex (EC), superior temporal gyrus (STG), and prefrontal cortex (PFC) — for every probe in their dataset (Supplementary Table 7). So a single CpG like cg07249765 gets one Pearson r value per brain region it was compared against, since blood-EC correlation, blood-STG correlation, and blood-PFC correlation are three independent statistical results, each computed from the same set of paired samples but against a different brain region's methylation values.
+
+<img width="2412" height="1564" alt="image" src="https://github.com/user-attachments/assets/4a4526ac-7f01-4ff6-b23b-ba3078344fb3" />
+## Figure 2. CpG Database
 
 This is why the tissue_pair column exists as a distinct field from CpG — the true unique key in the database is the combination of (CpG ID, tissue pair), not CpG ID alone. 
 
@@ -225,6 +228,9 @@ The script applies consistent formatting across all worksheets, including:
 - workbook styling
 
 ---
+
+<img width="2478" height="1602" alt="image" src="https://github.com/user-attachments/assets/b257aa76-ca71-4b15-a36e-dd5dc502e851" />
+## Figure 3. User Guide for Interactive Web Tool
 
 # Outputs
 
