@@ -1,5 +1,19 @@
 # Epigenomics-of-brain-ageing-tissue-concordance
 
+## Licensing
+
+The source code in this repository is released under the MIT License.
+
+Published supplementary datasets included in `data/raw/` remain the copyright of
+their original authors and publishers and are distributed only for the purpose of
+reproducing the published pipeline. Users should consult the original publications
+for the applicable terms of use.
+
+Any downloaded GEO datasets are not redistributed with this repository and must
+be obtained from NCBI GEO.
+
+## Repositry
+
 This repository curates a database of 2,937 CpG-site correlations between peripheral tissues (blood, buccal) and brain regions (prefrontal cortex, superior temporal gyrus, entorhinal cortex, cerebellum), compiled from published cross-tissue methylation studies:
 
 - Hannon E, et al. (2015). *Epigenetics*, **10**(11), 1024–1032. DOI: [10.1080/15592294.2015.1100786](https://doi.org/10.1080/15592294.2015.1100786)
