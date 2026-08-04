@@ -14,7 +14,23 @@ This repository curates a database of 2,937 CpG-site correlations between periph
 
 
 <img width="2440" height="1620" alt="image" src="https://github.com/user-attachments/assets/5fa73741-29bf-4576-9abb-1bedd274e973" />
-## Figure 1. Interactive Database
+
+**Figure 1.** Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified database with standardised genomic annotation and accessed through an interactive Shiny web application.
+
+<p align="center">
+  <img src="Figures/database_overview.png" width="800">
+</p>
+
+<p align="center">
+<b>Figure 1.</b> Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified searchable database and interactive web application.
+</p>
+
+
+## Overview
+
+![CpG Concordance Database workflow](Figures/workflow.png)
+
+**Figure 1. Workflow for construction of the CpG Concordance Database.** Published brain–peripheral DNA methylation concordance studies were systematically identified, curated, harmonised into a common schema, and integrated into an interactive Shiny web application supporting gene- and CpG-level searches, visualisation, and data download.
 
 The database integrates all published human studies (through 2026) that provide genome-wide, CpG-level cross-tissue DNA methylation correlations between matched brain and peripheral tissues in a format suitable for systematic extraction. At the time of compilation, this comprised five primary resources: Hannon et al. (2015), Edgar et al. (2017), Braun et al. (2019), Sommerer et al. (2022), and Nishitani et al. (2023). Other blood–brain methylation studies exist but either examined limited candidate loci, did not publish genome-wide CpG-level concordance statistics, or did not provide supplementary data amenable to systematic extraction.
 
