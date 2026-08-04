@@ -1,4 +1,4 @@
-# data/raw
+# raw data
 
 This directory contains the original source files used to construct the **CpG Brain–Peripheral Correlation Database**.
 
