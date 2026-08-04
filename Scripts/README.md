@@ -4,6 +4,34 @@ This repository contains two Python scripts that extract published matched brain
 
 ## Scripts
 
+### `02_extract_edgar_becon.py`
+
+This is a **data-extraction script**. It aims to recapitulate Edgar et al., (2017) data by extracting CpG-level cross-tissue correlation estimates. It is scraping the underlying methylation dataset from which Edgar et al. (2017) computed all of the CpG-level blood–brain correlations that power the BECon web application reported in Edgar et al., (2017).
+
+GSE95049 is the Gene Expression Omnibus (GEO) accession containing the DNA methylation data generated for the BECon study. It contains genome-wide Illumina HumanMethylation450 array data from matched blood and postmortem brain tissue obtained from the same individuals. Specifically, the study measured:
+
+- whole blood (PBMC/blood)
+- Brodmann area 7
+- Brodmann area 10
+- Brodmann area 20
+
+From the same donors, allowing CpG-by-CpG comparisons between peripheral and brain tissues.
+
+Unlike Hannon et al., (GSE59685) which sampled four brain regions including frontal cortex, entorhinal cortex, superior temporal gyrus and cerebellum, Edgar generated an independent matched cohort with three Brodmann regions.
+
+Specifically the script `02_extract_edgar_becon.py`:
+
+- reads a local GSE95049 processed matrix in CSV/TSV/TXT format, including gzipped files;
+- detects blood, BA7, BA10 and BA20 samples;
+- removes the known technical replicates by default;
+- aligns subjects across tissues;
+- calculates CpG-level Spearman correlations;
+- records the number of complete pairs for each estimate;
+- optionally joins Illumina probe annotation;
+- retains all finite correlations unless you explicitly specify a threshold;
+- writes a harmonised CSV compatible with the schema used for database pipeline.
+
+
 ### `extract_source_data.py`
 
 This is the **data-generation script**. It reads supplementary Excel files from the source studies, extracts CpG-level cross-tissue correlation estimates, annotates the CpGs, merges the datasets, and generates:
