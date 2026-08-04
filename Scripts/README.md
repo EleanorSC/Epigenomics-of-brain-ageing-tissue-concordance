@@ -27,6 +27,35 @@ The workbook contains:
 4. `Additional_Curated_Examples`
 5. `Database_Access_Guide`
 
+
+## NOTES
+Nishitani_Supplement_41398_2023_2370_MOESM3_ESM.xlsx
+
+Contains Supplementary Table S4, which lists the CpG-level brain–peripheral correlations that the database uses.
+
+It contains six worksheets:
+
+BRvsBL_BH
+BRvsSA_BH
+BRvsEP_BH
+BRvsBLadj_BH
+BRvsSAadj_BH
+BRvsEPadj_BH
+
+Each worksheet contains, for every CpG:
+
+chromosome
+genomic position
+gene
+Spearman correlation (ρ)
+P-value
+adjusted correlation
+SNP flag
+mQTL flag
+BH significance
+
+"Supplementary Table S4. Characteristics of the CpGs that surpassed the Benjamini-Hochberg level of significance for the degree of correlation between brain and peripheral tissues."
+
 ## Current source data
 
 The automated extraction currently incorporates two published supplementary datasets.
