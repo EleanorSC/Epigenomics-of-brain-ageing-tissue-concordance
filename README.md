@@ -14,20 +14,17 @@ This repository curates a database of 2,937 CpG-site correlations between periph
 
 
 
-<p align="center">
+<p align="left">
   <img src="Figures/glass_brain.png" width="800">
 </p>
 
-<p align="center">
+<p align="left">
 <b>Figure 1.</b> Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified searchable database and interactive web application.
 </p>
 
 
 ## Overview
 
-![CpG Concordance Database workflow](Figures/workflow.png)
-
-**Figure 1. Workflow for construction of the CpG Concordance Database.** Published brain–peripheral DNA methylation concordance studies were systematically identified, curated, harmonised into a common schema, and integrated into an interactive Shiny web application supporting gene- and CpG-level searches, visualisation, and data download.
 
 The database integrates all published human studies (through 2026) that provide genome-wide, CpG-level cross-tissue DNA methylation correlations between matched brain and peripheral tissues in a format suitable for systematic extraction. At the time of compilation, this comprised five primary resources: Hannon et al. (2015), Edgar et al. (2017), Braun et al. (2019), Sommerer et al. (2022), and Nishitani et al. (2023). Other blood–brain methylation studies exist but either examined limited candidate loci, did not publish genome-wide CpG-level concordance statistics, or did not provide supplementary data amenable to systematic extraction.
 
@@ -35,11 +32,11 @@ All 970 unique qualifying CpG sites (r/ρ > 0.6) are annotated with gene, chromo
 
 In the database, each row represents a distinct tissue-pair comparison (not just a CpG site). For some CpGs therefore, there will be multiple reported Pearson r-values depending on what correlations are reported; e.g. Hannon et al.'s blood-brain dataset tested correlations between blood methylation and methylation in three separate brain regions — entorhinal cortex (EC), superior temporal gyrus (STG), and prefrontal cortex (PFC) — for every probe in their dataset (Supplementary Table 7). So a single CpG like cg07249765 gets one Pearson r value per brain region it was compared against, since blood-EC correlation, blood-STG correlation, and blood-PFC correlation are three independent statistical results, each computed from the same set of paired samples but against a different brain region's methylation values.
 
-<p align="center">
+<p align="left">
   <img src="Figures/database_overview.png" width="800">
 </p>
 
-<p align="center">
+<p align="left">
 <b>Figure 2.</b> Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified searchable database and interactive web application.
 </p>
 
@@ -247,11 +244,11 @@ The script applies consistent formatting across all worksheets, including:
 
 ---
 
-<p align="center">
+<p align="left">
   <img src="Figures/access_guide.png" width="800">
 </p>
 
-<p align="center">
+<p align="left">
 <b>Figure 3.</b> User Guide for the searchable database and interactive web application.
 </p>
 
