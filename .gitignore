@@ -1,0 +1,117 @@
+###############################################################################
+# Epigenomics-of-brain-ageing-tissue-concordance
+# .gitignore
+###############################################################################
+
+############################
+# Operating system files
+############################
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+############################
+# Python
+############################
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+############################
+# R
+############################
+
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+############################
+# IDEs
+############################
+
+.vscode/
+.idea/
+
+############################
+# Logs
+############################
+
+*.log
+
+############################
+# Temporary files
+############################
+
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+###############################################################################
+# DATA
+###############################################################################
+
+############################
+# Large GEO downloads
+############################
+
+data/raw/GSE*
+
+############################
+# Compressed archives
+############################
+
+data/raw/*.tar
+data/raw/*.tar.gz
+data/raw/*.zip
+data/raw/*.7z
+
+############################
+# Processed extraction outputs
+############################
+
+data/processed/*.csv
+data/processed/*.tsv
+data/processed/*.txt
+data/processed/*.parquet
+
+############################
+# Final databases
+############################
+
+Database/*.csv
+Database/*.xlsx
+Database/*.xls
+Database/*.json
+
+############################
+# Optional cache
+############################
+
+data/cache/
+
+###############################################################################
+# KEEP THESE FILES
+###############################################################################
+
+!README.md
+!LICENSE
+!data/README.md
+!data/raw/README.md
+!data/processed/README.md
+!data/reference/README.md
