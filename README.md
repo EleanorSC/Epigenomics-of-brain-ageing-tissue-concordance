@@ -13,12 +13,9 @@ This repository curates a database of 2,937 CpG-site correlations between periph
 - Nishitani S, et al. (2023). *Translational Psychiatry*, **13**, 72. DOI: [10.1038/s41398-023-02370-0](https://doi.org/10.1038/s41398-023-02370-0)
 
 
-<img width="2440" height="1620" alt="image" src="https://github.com/user-attachments/assets/5fa73741-29bf-4576-9abb-1bedd274e973" />
-
-**Figure 1.** Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified database with standardised genomic annotation and accessed through an interactive Shiny web application.
 
 <p align="center">
-  <img src="Figures/database_overview.png" width="800">
+  <img src="Figures/glass_brain.png" width="800">
 </p>
 
 <p align="center">
@@ -38,8 +35,13 @@ All 970 unique qualifying CpG sites (r/ρ > 0.6) are annotated with gene, chromo
 
 In the database, each row represents a distinct tissue-pair comparison (not just a CpG site). For some CpGs therefore, there will be multiple reported Pearson r-values depending on what correlations are reported; e.g. Hannon et al.'s blood-brain dataset tested correlations between blood methylation and methylation in three separate brain regions — entorhinal cortex (EC), superior temporal gyrus (STG), and prefrontal cortex (PFC) — for every probe in their dataset (Supplementary Table 7). So a single CpG like cg07249765 gets one Pearson r value per brain region it was compared against, since blood-EC correlation, blood-STG correlation, and blood-PFC correlation are three independent statistical results, each computed from the same set of paired samples but against a different brain region's methylation values.
 
-<img width="2412" height="1564" alt="image" src="https://github.com/user-attachments/assets/4a4526ac-7f01-4ff6-b23b-ba3078344fb3" />
-## Figure 2. CpG Database
+<p align="center">
+  <img src="Figures/database_overview.png" width="800">
+</p>
+
+<p align="center">
+<b>Figure 2.</b> Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified searchable database and interactive web application.
+</p>
 
 This is why the tissue_pair column exists as a distinct field from CpG — the true unique key in the database is the combination of (CpG ID, tissue pair), not CpG ID alone. 
 
@@ -245,8 +247,13 @@ The script applies consistent formatting across all worksheets, including:
 
 ---
 
-<img width="2478" height="1602" alt="image" src="https://github.com/user-attachments/assets/b257aa76-ca71-4b15-a36e-dd5dc502e851" />
-## Figure 3. User Guide for Interactive Web Tool
+<p align="center">
+  <img src="Figures/access_guide.png" width="800">
+</p>
+
+<p align="center">
+<b>Figure 3.</b> User Guide for the searchable database and interactive web application.
+</p>
 
 # Outputs
 
