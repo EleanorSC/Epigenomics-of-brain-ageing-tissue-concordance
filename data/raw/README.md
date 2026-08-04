@@ -10,7 +10,22 @@ The extraction scripts in `Scripts/` parse these files and produce harmonised in
 
 ## Directory contents
 
-| File | Source | Used by |
+https://epigenetics.essex.ac.uk/bloodbrain/
+
+| Original File Name | Source | Citation | doi | Used by |
+| `SupplementaryTables.xlsx` | https://epigenetics.essex.ac.uk/bloodbrain/ | Hannon et al. (2015) *Epigenetics* |10.1080/15592294.2015.1100786 |`01_extract_hannon.py` |
+
+
+| Original File Name                                                       | Source                                                                                                                     | Citation                                                 | DOI                           | Used by                               |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------- | ------------------------------------- |
+| `SupplementaryTables.xlsx`                                               | [https://epigenetics.essex.ac.uk/bloodbrain/](https://epigenetics.essex.ac.uk/bloodbrain/)                                 | Hannon E, *et al.* (2015). *Epigenetics*                 | 10.1080/15592294.2015.1100786 | `01_extract_hannon.py`                |
+| `GSE95049_series_matrix.txt.gz` *(or whichever GEO file you downloaded)* | [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95049](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95049) | Edgar RD, *et al.* (2017). *Translational Psychiatry*    | 10.1038/tp.2017.171           | `02_extract_edgar_becon.py`           |
+| `Supplementary_Table_3.xlsx`                                             | Supplementary material                                                                                                     | Braun PR, *et al.* (2019). *Translational Psychiatry*    | 10.1038/s41398-019-0376-y     | `03_extract_braun_image_cpg.py`       |
+| `13148_2022_1357_MOESM1_ESM.xlsx`                                        | Supplementary material                                                                                                     | Sommerer Y, *et al.* (2022). *Clinical Epigenetics*      | 10.1186/s13148-022-01357-w    | `04_extract_sommerer_buccal_brain.py` |
+| `41398_2023_2370_MOESM3_ESM.xlsx`                                        | Supplementary material                                                                                                     | Nishitani S, *et al.* (2023). *Translational Psychiatry* | 10.1038/s41398-023-02370-0    | `05_extract_nishitani_amaze_cpg.py`   |
+
+
+
 |------|--------|---------|
 | `Hannon_SupplementaryTables.xlsx` | Hannon et al. (2015) *Epigenetics* | `01_extract_hannon.py` |
 | `GSE95049_processed_matrix.*` | Edgar et al. (2017) BECon / GSE95049 | `02_extract_edgar_becon.py` |
