@@ -18,7 +18,7 @@ The following files are required to reproduce the CpG Brain–Peripheral Correla
 |:------|:--------------|:-------|:---:|:------------------|
 | Hannon et al. (2015) | `SupplementaryTables.xlsx` | [Blood–Brain DNAm Comparison Tool](https://epigenetics.essex.ac.uk/bloodbrain/) | 10.1080/15592294.2015.1100786 | `01_extract_hannon.py` |
 | Edgar et al. (2017) | `GSE95049_series_matrix.txt.gz` | GEO: GSE95049 | 10.1038/tp.2017.171 | `02_extract_edgar_becon.py` |
-| Braun et al. (2019) | `Supplementary_Table_3.xlsx` | Supplementary material | 10.1038/s41398-019-0376-y | `03_extract_braun_image_cpg.py` |
+| Braun et al. (2019) | `41398_2019_376_MOESM9_ESM.xlsx` | Supplementary material | 10.1038/s41398-019-0376-y | `03_extract_braun_image_cpg.py` |
 | Sommerer et al. (2022) | `13148_2022_1357_MOESM1_ESM.xlsx` | Supplementary material | 10.1186/s13148-022-01357-w | `04_extract_sommerer_buccal_brain.py` |
 | Nishitani et al. (2023) | `41398_2023_2370_MOESM3_ESM.xlsx` | Supplementary material | 10.1038/s41398-023-02370-0 | `05_extract_nishitani_amaze_cpg.py` |
 
