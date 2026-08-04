@@ -12,6 +12,8 @@ The extraction scripts in `Scripts/` parse these files and produce harmonised in
 
 ## Primary input files
 
+The following files are required to reproduce the CpG Brain–Peripheral Correlation Database. Each file is processed by a dedicated extraction script that converts the original study output into a harmonised long-format dataset prior to database construction.
+
 | Study | Primary Input | Source | DOI | Extraction Script |
 |:------|:--------------|:-------|:---:|:------------------|
 | Hannon et al. (2015) | `SupplementaryTables.xlsx` | [Blood–Brain DNAm Comparison Tool](https://epigenetics.essex.ac.uk/bloodbrain/) | 10.1080/15592294.2015.1100786 | `01_extract_hannon.py` |
@@ -19,18 +21,6 @@ The extraction scripts in `Scripts/` parse these files and produce harmonised in
 | Braun et al. (2019) | `Supplementary_Table_3.xlsx` | Supplementary material | 10.1038/s41398-019-0376-y | `03_extract_braun_image_cpg.py` |
 | Sommerer et al. (2022) | `13148_2022_1357_MOESM1_ESM.xlsx` | Supplementary material | 10.1186/s13148-022-01357-w | `04_extract_sommerer_buccal_brain.py` |
 | Nishitani et al. (2023) | `41398_2023_2370_MOESM3_ESM.xlsx` | Supplementary material | 10.1038/s41398-023-02370-0 | `05_extract_nishitani_amaze_cpg.py` |
-
-## Primary input files
-
-The following files are required to reproduce the CpG Brain–Peripheral Correlation Database. Each file is processed by a dedicated extraction script that converts the original study output into a harmonised long-format dataset prior to database construction.
-
-| Primary Input | Source | Citation | DOI | Extraction Script |
-|----------------|--------|----------|-----|-------------------|
-| `SupplementaryTables.xlsx` | https://epigenetics.essex.ac.uk/bloodbrain/ | Hannon E, Lunnon K, Schalkwyk L, Mill J. (2015). *Interindividual methylomic variation across blood, cortex, and cerebellum: implications for epigenetic studies of neurological and neuropsychiatric phenotypes*. **Epigenetics**, 10(11), 1024–1032. | 10.1080/15592294.2015.1100786 | `01_extract_hannon.py` |
-| `GSE95049_series_matrix.txt.gz` *(or equivalent processed GSE95049 matrix)* | https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE95049 | Edgar RD, Jones MJ, Meaney MJ, Turecki G, Kobor MS. (2017). *BECon: a tool for interpreting DNA methylation findings from blood in the context of brain*. **Translational Psychiatry**, 7:e1187. | 10.1038/tp.2017.171 | `02_extract_edgar_becon.py` |
-| `Supplementary_Table_3.xlsx` | Supplementary material accompanying the publication | Braun PR, Han S, Hing B, et al. (2019). *Genome-wide DNA methylation comparison between live human brain and peripheral tissues within individuals*. **Translational Psychiatry**, 9:47. | 10.1038/s41398-019-0376-y | `03_extract_braun_image_cpg.py` |
-| `13148_2022_1357_MOESM1_ESM.xlsx` | Supplementary material accompanying the publication | Sommerer Y, Ohlei O, Dobricic V, et al. (2022). *A correlation map of genome-wide DNA methylation patterns between paired human brain and buccal samples*. **Clinical Epigenetics**, 14:118. | 10.1186/s13148-022-01357-w | `04_extract_sommerer_buccal_brain.py` |
-| `41398_2023_2370_MOESM3_ESM.xlsx` | Supplementary material accompanying the publication | Nishitani S, Isozaki M, Yao A, et al. (2023). *Cross-tissue correlations of genome-wide DNA methylation in Japanese live human brain and blood, saliva, and buccal epithelial tissues*. **Translational Psychiatry**, 13:72. | 10.1038/s41398-023-02370-0 | `05_extract_nishitani_amaze_cpg.py` |
 
 ### Notes
 
