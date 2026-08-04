@@ -1,6 +1,6 @@
 # CpG Brain–Peripheral Concordance Database
 
-This repository contains two Python scripts that extract published brain–peripheral DNA methylation concordance data and assemble the results into a searchable Excel workbook.
+This repository contains two Python scripts that extract published matched brain DNAm with peripheral DNAm (tissue concordance data) and assemble the results into a searchable Excel workbook.
 
 ## Scripts
 
