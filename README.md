@@ -16,15 +16,6 @@ This repository curates a database of 2,937 CpG-site correlations between periph
 <img width="2440" height="1620" alt="image" src="https://github.com/user-attachments/assets/5fa73741-29bf-4576-9abb-1bedd274e973" />
 
 
-
-shiny_app/
-├── app.R
-├── data/
-│   └── cpg_brain_peripheral_correlation_database.csv
-└── www/
-    ├── brain.css
-    └── brain.js
-
 The database integrates all published human studies (through 2026) that provide genome-wide, CpG-level cross-tissue DNA methylation correlations between matched brain and peripheral tissues in a format suitable for systematic extraction. At the time of compilation, this comprised five primary resources: Hannon et al. (2015), Edgar et al. (2017), Braun et al. (2019), Sommerer et al. (2022), and Nishitani et al. (2023). Other blood–brain methylation studies exist but either examined limited candidate loci, did not publish genome-wide CpG-level concordance statistics, or did not provide supplementary data amenable to systematic extraction.
 
 All 970 unique qualifying CpG sites (r/ρ > 0.6) are annotated with gene, chromosomal position (hg19), genomic context, and source study. Includes Python scripts to reproduce the full figure set: correlation distributions, tissue-pair comparisons, chromosomal and genomic-context breakdowns, top-gene rankings, and a genome-wide Manhattan-style plot of individual CpG sites — supporting research into reliable peripheral biomarkers of brain ageing and biological aging clocks
