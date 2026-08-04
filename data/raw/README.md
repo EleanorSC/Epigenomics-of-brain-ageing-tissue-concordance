@@ -12,6 +12,16 @@ The extraction scripts in `Scripts/` parse these files and produce harmonised in
 
 ## Primary input files
 
+| Study | Primary Input | Source | DOI | Extraction Script |
+|:------|:--------------|:-------|:---:|:------------------|
+| Hannon et al. (2015) | `SupplementaryTables.xlsx` | [Blood–Brain DNAm Comparison Tool](https://epigenetics.essex.ac.uk/bloodbrain/) | 10.1080/15592294.2015.1100786 | `01_extract_hannon.py` |
+| Edgar et al. (2017) | `GSE95049_series_matrix.txt.gz` | GEO: GSE95049 | 10.1038/tp.2017.171 | `02_extract_edgar_becon.py` |
+| Braun et al. (2019) | `Supplementary_Table_3.xlsx` | Supplementary material | 10.1038/s41398-019-0376-y | `03_extract_braun_image_cpg.py` |
+| Sommerer et al. (2022) | `13148_2022_1357_MOESM1_ESM.xlsx` | Supplementary material | 10.1186/s13148-022-01357-w | `04_extract_sommerer_buccal_brain.py` |
+| Nishitani et al. (2023) | `41398_2023_2370_MOESM3_ESM.xlsx` | Supplementary material | 10.1038/s41398-023-02370-0 | `05_extract_nishitani_amaze_cpg.py` |
+
+## Primary input files
+
 The following files are required to reproduce the CpG Brain–Peripheral Correlation Database. Each file is processed by a dedicated extraction script that converts the original study output into a harmonised long-format dataset prior to database construction.
 
 | Primary Input | Source | Citation | DOI | Extraction Script |
@@ -173,3 +183,33 @@ CpG_Brain_Peripheral_Correlation_Database.xlsx
 - Any updates or corrections should be implemented in the extraction scripts rather than by modifying the downloaded supplementary material.
 - Each extraction script records the original publication, supplementary table, and analysis type to preserve full provenance throughout the pipeline.
 - The five studies differ in scope. Some provide published significant subsets, whereas the BECon dataset is reconstructed from public processed data. These differences are retained in the database metadata and should be considered when interpreting coverage.
+
+- ## References
+
+**Hannon et al. (2015)**
+
+> Hannon E, Lunnon K, Schalkwyk L, Mill J. *Interindividual methylomic variation across blood, cortex, and cerebellum: implications for epigenetic studies of neurological and neuropsychiatric phenotypes.* Epigenetics. 2015;10(11):1024–1032. DOI: 10.1080/15592294.2015.1100786
+
+---
+
+**Edgar et al. (2017)**
+
+> Edgar RD, Jones MJ, Meaney MJ, Turecki G, Kobor MS. *BECon: a tool for interpreting DNA methylation findings from blood in the context of brain.* Translational Psychiatry. 2017;7:e1187. DOI: 10.1038/tp.2017.171
+
+---
+
+**Braun et al. (2019)**
+
+> Braun PR, Han S, Hing B, et al. *Genome-wide DNA methylation comparison between live human brain and peripheral tissues within individuals.* Translational Psychiatry. 2019;9:47. DOI: 10.1038/s41398-019-0376-y
+
+---
+
+**Sommerer et al. (2022)**
+
+> Sommerer Y, Ohlei O, Dobricic V, et al. *A correlation map of genome-wide DNA methylation patterns between paired human brain and buccal samples.* Clinical Epigenetics. 2022;14:118. DOI: 10.1186/s13148-022-01357-w
+
+---
+
+**Nishitani et al. (2023)**
+
+> Nishitani S, Isozaki M, Yao A, et al. *Cross-tissue correlations of genome-wide DNA methylation in Japanese live human brain and blood, saliva, and buccal epithelial tissues.* Translational Psychiatry. 2023;13:72. DOI: 10.1038/s41398-023-02370-0
