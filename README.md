@@ -12,7 +12,9 @@ This repository curates a database of 2,937 CpG-site correlations between periph
 
 - Nishitani S, et al. (2023). *Translational Psychiatry*, **13**, 72. DOI: [10.1038/s41398-023-02370-0](https://doi.org/10.1038/s41398-023-02370-0)
 
-<img width="452" height="259" alt="image" src="https://github.com/user-attachments/assets/de3b0eab-2aaa-4330-a6d4-93549cedd70e" />
+
+<img width="2440" height="1620" alt="image" src="https://github.com/user-attachments/assets/5fa73741-29bf-4576-9abb-1bedd274e973" />
+
 
 
 shiny_app/
