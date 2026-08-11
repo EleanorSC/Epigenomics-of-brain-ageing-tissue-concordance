@@ -21,6 +21,8 @@ The following files are required to reproduce the CpG Brain–Peripheral Correla
 | Braun et al. (2019) | `41398_2019_376_MOESM9_ESM.xlsx` | Supplementary material | 10.1038/s41398-019-0376-y | `03_extract_braun_image_cpg.py` |
 | Sommerer et al. (2022) | `13148_2022_1357_MOESM1_ESM.xlsx` | Supplementary material | 10.1186/s13148-022-01357-w | `04_extract_sommerer_buccal_brain.py` |
 | Nishitani et al. (2023) | `41398_2023_2370_MOESM3_ESM.xlsx` | Supplementary material | 10.1038/s41398-023-02370-0 | `05_extract_nishitani_amaze_cpg.py` |
+| Spiers et al., (2015) | `supp_25_3_338__index.html` |  GEO: GSE58885 | 10.1101/gr.180273.114 | `06_extract_spiers.py` |
+
 
 ### Notes
 
