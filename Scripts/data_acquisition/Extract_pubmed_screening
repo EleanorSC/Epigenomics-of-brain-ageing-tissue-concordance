@@ -10,6 +10,10 @@
 #install.packages("rentrez")
 #install.packages("openxlsx")
 
+###############################################################
+# Start timer
+###############################################################
+
 start_time <- Sys.time()
 
 library(rentrez)
@@ -69,8 +73,6 @@ AND
 
 '
 
-# n.b this retains 1025 papers to screen 
-
 ###############################################################
 # 2. Search PubMed
 ###############################################################
@@ -100,7 +102,7 @@ doc <- read_xml(pubmed_xml)
 articles <- xml_find_all(doc, ".//PubmedArticle")
 
 ###############################################################
-# 4. functions
+# 4. Helper functions
 ###############################################################
 
 get_text <- function(node, xpath) {
@@ -258,6 +260,9 @@ pubmed_records <- pubmed_records %>%
 ###############################################################
 # 7. Add useful automatic screening flags
 #
+# IMPORTANT:
+# These are prioritisation aids only.
+# They do NOT determine eligibility.
 ###############################################################
 
 pubmed_records <- pubmed_records %>%
@@ -326,8 +331,14 @@ pubmed_records <- pubmed_records %>%
         c(
           "epigenome-wide",
           "epigenome wide",
-          "genome-wide methylation",
-          "genome wide methylation",
+          "genome wide",
+          "genome-wide",
+         # "genome-wide DNA methylation",
+         # "genome wide DNA methylation",
+         # "genome-wide DNAm",
+         # "genome wide DNAm",
+         # "genome-wide methylation",
+         # "genome wide methylation",
           "450k",
           "epic array",
           "methylation array"
@@ -402,10 +413,23 @@ screening_possibily_eligible <- screening %>%
                 mentions_genomewide == "TRUE")
 
 
-# n = 84 are possibly eligible studies
+# n = 129 are possibly eligible studies
 
 library(dplyr)
 library(stringr)
+
+
+#Sanity check
+
+nishitani_study <- screening %>%
+  filter(
+    str_detect(Study, regex("Nishitani", ignore_case = TRUE)) |
+      str_detect(DOI, regex("10\\.1038/s41398-023-02370-0", ignore_case = TRUE))
+  )
+
+nishitani_study
+
+
 
 ###############################################################
 # Combine title and abstract into one searchable field
