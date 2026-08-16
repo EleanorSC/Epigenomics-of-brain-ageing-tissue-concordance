@@ -12,6 +12,13 @@ for the applicable terms of use.
 Any downloaded GEO datasets are not redistributed with this repository and must
 be obtained from NCBI GEO.
 
+# XTRACE-CpG:
+## **X**-Tissue **R**eference for **A**nalysing **C**ross-**T**issue **E**pigenetics: **XTRACE-CpG**
+
+There is currently no unified, curated resource that systematically collates published evidence on cross-tissue DNA methylation concordance at individual CpG sites. This project seeks to systemically review this research landscape and develop a harmonised and versioned database of published brain-peripheral DNA methylation measured from matched individuals, designed to be reproducibly updated as new studies become available.
+
+The objective is to collate findings from published work that report correlations between DNAm measured in a peripheral tissue (e.g. blood, saliva) and brain tissue (e.g. as obtained from postmortem or biopsy samples). These genome-wide brain-peripheral DNA methylation concordance findings will then be aggregated into an openly available version-controlled database. 
+
 ## Repositry
 
 This repository curates a database of 2,937 CpG-site correlations between peripheral tissues (blood, buccal) and brain regions (prefrontal cortex, superior temporal gyrus, entorhinal cortex, cerebellum), compiled from published cross-tissue methylation studies:
