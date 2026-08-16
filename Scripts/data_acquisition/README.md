@@ -28,7 +28,7 @@ Automated screening is used for reproducible triage and prioritisation rather th
 
 ### `Search_ewas_catalog.R`
 
-Finally, to ensure relevant published findings are not missed from the literature searches, `Search_ewas_catalog.R`, Uses the EWAS Catalog as a supplementary source for identifying potentially eligible studies that may not be captured through the primary PubMed and Scopus searches.
+To ensure relevant published findings are not missed from the literature searches, `Search_ewas_catalog.R`, Uses the EWAS Catalog as a supplementary source for identifying potentially eligible studies that may not be captured through the primary PubMed and Scopus searches.
 
 The script:
 
@@ -40,4 +40,20 @@ The script:
 - identifies unique peripheral-tissue EWAS publications and their associated traits for additional checking of potentially relevant brain-related phenotypes; and
 - generates tissue-frequency summaries that can be used to audit the coverage and harmonisation of EWAS Catalog tissue labels.
 
-The EWAS Catalog search is used as a supplementary identification strategy rather than as a substitute for the preregistered PubMed and Scopus searches. Candidate publications identified through the Catalog are subsequently assessed against the same eligibility criteria and deduplicated against records identified through the bibliographic database searches.
+### `Search_GEO_resource.R`
+
+Finally, the `Search_GEO_resource.R` script uses the NCBI Gene Expression Omnibus (GEO) as a final supplementary study-identification resource to identify potentially relevant human DNA methylation datasets containing both brain and peripheral tissue samples, with particular attention to GEO Series not linked to an indexed PubMed publication.
+
+The script:
+
+- searches GEO DataSets programmatically for human DNA methylation Series containing evidence of both brain and peripheral tissue samples;
+- retrieves GEO Series-level metadata using the NCBI Entrez API;
+- cross-references identified GEO Series against PubMed to determine whether an indexed publication is linked to the dataset;
+- inspects sample-level GEO metadata to confirm the presence of brain and peripheral samples and identify terminology indicative of matched, paired, or common-donor sampling;
+- flags potentially relevant GEO Series without a linked PubMed/Scopus publication record;
+- prioritises candidate Series containing stronger evidence of matched brain–peripheral sampling; and
+- exports candidate datasets and associated metadata for manual eligibility assessment by Independent reviewers.
+
+
+#### Of Note
+Both The EWAS Catalog search and GEO search are used as a supplementary identifications strategies. If new studies are found here, the absence of a linked publication record indexed in either PubMed or Scopus is not interpreted as evidence that a dataset is unpublished; such Series are retained for manual investigation to determine whether an associated publication exists and whether the dataset satisfies the predefined study eligibility criteria.
