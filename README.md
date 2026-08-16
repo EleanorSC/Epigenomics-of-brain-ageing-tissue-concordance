@@ -13,7 +13,7 @@ Any downloaded GEO datasets are not redistributed with this repository and must
 be obtained from NCBI GEO.
 
 # XTRACE-CpG:
-**XTRACE-CpG**: **X**-Tissue **R**eference for **A**nalysing **C**ross-**T**issue **E**pigenetics
+**XTRACE-CpG**: **Cross**-Tissue **R**eference for **A**nalysing **C**ross-**T**issue **E**pigenetics
 
 There is currently no unified, curated resource that systematically collates published evidence on cross-tissue DNA methylation concordance at individual CpG sites. This project seeks to systemically review this research landscape and develop a harmonised and versioned database of published brain-peripheral DNA methylation measured from matched individuals, designed to be reproducibly updated as new studies become available.
 
