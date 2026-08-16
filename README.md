@@ -1,4 +1,4 @@
-# Epigenomics-of-brain-ageing-tissue-concordance
+# CpG Brain-Peripheral Concordance Project
 
 ## Licensing
 
