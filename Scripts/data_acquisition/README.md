@@ -1,6 +1,14 @@
 # Data Acquisition Scripts 
 ## Automated literature identification and screening
 
+The following scripts:
+`Extract_pubmed_screening.R`
+`Extract_scopus_screening.R`
+`Search_ewas_catalog.R`
+`Search_GEO_resource.R`
+
+Concern the systematic literature search.
+
 ### `Extract_pubmed_screening.R`
 
 Runs the preregistered PubMed search, retrieves citation metadata
