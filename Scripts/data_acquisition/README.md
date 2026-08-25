@@ -36,12 +36,13 @@ Automated screening is used for reproducible triage and prioritisation rather th
 
 ### `Search_ewas_catalog.R`
 
-To ensure relevant published findings are not missed from the literature searches, `Search_ewas_catalog.R`, Uses the EWAS Catalog as a supplementary source for identifying potentially eligible studies that may not be captured through the primary PubMed and Scopus searches.
+To ensure relevant published findings are not missed from the literature searches, `Search_ewas_catalog.R`, Uses the EWAS Catalog as a supplementary source for identifying potentially eligible studies that may not be captured through the primary PubMed and Scopus searches. Records will be filtered using the ‘tissue’ metadata field to identify studies involving brain or peripheral tissues. 
+
 
 The script:
 
 - imports the downloaded EWAS Catalog study metadata;
-- audits the tissue terminology used across Catalog records;
+- audits / cleans the tissue terminology used across Catalog records;
 - preserves the original EWAS Catalog tissue labels while creating cleaned and harmonised tissue classifications;
 - harmonises relevant tissue labels into broad `brain` and `peripheral` categories;
 - identifies unique publications containing brain-tissue EWAS analyses for manual eligibility screening;
