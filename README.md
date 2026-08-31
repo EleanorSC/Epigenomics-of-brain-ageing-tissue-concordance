@@ -425,13 +425,13 @@ Important: `S6` is already a study-defined subset of CpGs (the top q < 0.05 corr
 The current extraction script applies an absolute-correlation threshold:
 
 ```python
-CORR_THRESHOLD = 0.6
+CORR_THRESHOLD = 0.65
 ```
 
 Hannon rows are retained only when:
 
 ```python
-abs(r) > 0.6
+abs(r) > 0.65
 ```
 
 This is implemented by excluding rows meeting:
@@ -444,7 +444,7 @@ if r is None or abs(r) <= CORR_THRESHOLD:
 Sommerer rows are retained only when:
 
 ```python
-abs(rho) > 0.6
+abs(rho) > 0.65
 ```
 
 This is implemented by excluding rows meeting:
@@ -457,10 +457,10 @@ if not probe or rho is None or abs(rho) <= CORR_THRESHOLD:
 Accordingly, the present database contains only observations with:
 
 ```text
-|r| > 0.60 or |rho| > 0.60
+|r| > 0.65 or |rho| > 0.65
 ```
 
-Values exactly equal to 0.60 are excluded.
+Values exactly equal to 0.65 are excluded.
 
 ## Where threshold-dependent wording also appears
 
@@ -497,7 +497,7 @@ For Sommerer et al., the currently used `S6` sheet is itself filtered to q < 0.0
 Replace:
 
 ```python
-CORR_THRESHOLD = 0.6
+CORR_THRESHOLD = 0.65
 ```
 
 with:
@@ -535,14 +535,14 @@ CORR_THRESHOLD = None   # retain all available correlations
 or:
 
 ```python
-CORR_THRESHOLD = 0.6    # retain only |correlation| > 0.6
+CORR_THRESHOLD = 0.65    # retain only |correlation| > 0.6
 ```
 
 A more explicit alternative is:
 
 ```python
 APPLY_CORRELATION_FILTER = False
-CORR_THRESHOLD = 0.6
+CORR_THRESHOLD = 0.65
 ```
 
 with:
