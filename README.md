@@ -109,7 +109,8 @@ This is why the tissue_pair column exists as a distinct field from CpG — the t
 
 Using cg07249765 as an example, this site happens to correlate strongly and consistently across all three brain regions (0.994–0.996), which itself is a meaningful finding — some CpGs are region-specific proxies while others, like this one, are robust blood-based proxies for cortical methylation state regardless of which brain region is being modelled.
 
-## Database
+## Prototype database 31/08/26
+
 ### Database of CpG–Brain Peripheral Correlations
 
 This repository contains two scripts with distinct purposes:
