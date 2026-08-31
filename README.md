@@ -1,4 +1,4 @@
-# CpG Brain-Peripheral Concordance Project
+# TRACE CpG: cross-tissue DNA methylation concordance in human brain and peripheral tissue samples
 
 ## Licensing
 
