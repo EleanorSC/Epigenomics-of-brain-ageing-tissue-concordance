@@ -52,7 +52,7 @@ is reproducible across independent datasets and tissue comparisons.
 
 ## Scope
 
-Studies are considered for TRACE-CpG where they provide genome-wide DNAm data from
+Studies are considered for TRACE-CpG where they provide DNAm data from
 matched human brain and peripheral tissue samples and either:
 
 - report CpG-level cross-tissue concordance statistics; or
@@ -60,12 +60,8 @@ matched human brain and peripheral tissue samples and either:
   for CpG-level concordance to be derived.
 
 Peripheral tissues may include blood, saliva, buccal tissue and other accessible
-non-brain tissues where eligible data are identified.
-
-Brain samples may include postmortem or surgically resected tissue and may represent
-different anatomical regions.
-
-Both array-based and sequencing-based methylation studies are eligible where the
+non-brain tissues where eligible data are identified. Brain samples may include postmortem or surgically resected tissue and may represent
+different anatomical regions. Both array-based and sequencing-based methylation studies are eligible where the
 required CpG-level information can be obtained.
 
 ## TRACE-CpG database
