@@ -1,5 +1,5 @@
-
-# Prototype TRACE-CpG Shiny App Prototype 31/08/26
+# TRACE-CpG Shiny App
+## Prototype TRACE-CpG Shiny App Prototype 31/08/26
 
 Interactive web application for navigating the **TRACE-CpG**: **T**issue **R**eference-database for **A**nalysing **C**oncordant-**T**issue **E**pigenetics
 
