@@ -123,18 +123,6 @@ cross-tissue DNAm concordance.
 Original source information is retained to allow individual observations to be traced
 to the contributing study or dataset.
 
-### Published and TRACE-derived estimates
-
-Where possible, TRACE-CpG distinguishes between:
-
-- **source-reported estimates** — concordance statistics reported by the original
-  investigators; and
-- **TRACE-derived estimates** — concordance statistics calculated from publicly
-  available CpG-by-sample methylation data using a documented TRACE-CpG workflow.
-
-The original analytical definition and processing status are retained so that estimates
-generated under different pipelines are not assumed to be directly equivalent.
-
 ### Complete and filtered datasets
 
 Where complete or substantially complete CpG-level correlation matrices are available,
