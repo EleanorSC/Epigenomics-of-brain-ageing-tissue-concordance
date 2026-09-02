@@ -1,5 +1,10 @@
 ## Prototype database 31/08/26
 
+A prototype version of this Shiny application has been developed using a small subset of published cross-tissue concordance data to assess the feasibility, usability, and potential research value of a searchable DNAm cross-tissue correlation database (E.L.S Conole). 
+
+Development of this prototype precedes the initiation of the systematic formal extraction and is being used to inform the screening criteria, data-extraction and harmonisation steps of the project.
+
+
 ### Database of CpG–Brain Peripheral Correlations
 
 This repository contains two scripts with distinct purposes:
