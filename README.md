@@ -32,9 +32,30 @@ The TRACE-CpG project will involve:
    DNAm concordance; and
 5. an interactive web application for querying and visualising the resulting resource.
 
+## Prototype resource
+
+The current repository contains a **developmental prototype** of the TRACE-CpG database
+and web application.
+
+The prototype was assembled from a subset of published resources to establish and test:
+
+- data structures;
+- tissue and brain-region harmonisation;
+- CpG annotation;
+- visualisation approaches;
+- database querying;
+- data extraction procedures; and
+- the interactive application architecture.
+
+The prototype should therefore not be interpreted as the final systematically identified
+TRACE-CpG evidence base.
+
 ## Repositry
 
-This repository aims to curate a database of all published CpG-site correlations between peripheral tissues (blood, buccal) and brain regions (prefrontal cortex, superior temporal gyrus, entorhinal cortex, cerebellum), compiled from published cross-tissue methylation studies to date. At present the prototype database is built from published correlations from the following studies:
+This repository aims to curate a database of all published CpG-site correlations between peripheral tissues (blood, buccal) and brain regions (prefrontal cortex, superior temporal gyrus, entorhinal cortex, cerebellum), compiled from published cross-tissue methylation studies to date. 
+
+The initial development of TRACE-CpG has been informed by published matched-tissue
+DNAm analyses from the following studies:
 
 - Hannon E, et al. (2015). *Epigenetics*, **10**(11), 1024–1032. DOI: [10.1080/15592294.2015.1100786](https://doi.org/10.1080/15592294.2015.1100786)
 
@@ -56,6 +77,9 @@ This repository aims to curate a database of all published CpG-site correlations
 <b>Figure 1.</b> Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified searchable database and interactive web application.
 </p>
 
+This list describes resources identified during initial development and should not be
+interpreted as the final set of studies eligible for TRACE-CpG. Final inclusion is
+determined through the systematic screening workflow.
 
 ## Scientific rationale
 
@@ -90,123 +114,7 @@ non-brain tissues where eligible data are identified. Brain samples may include 
 different anatomical regions. Both array-based and sequencing-based methylation studies are eligible where the
 required CpG-level information can be obtained.
 
-## TRACE-CpG database
-
-### Unit of observation
-
-The fundamental observation in TRACE-CpG is a **CpG × tissue-comparison estimate**.
-
-A CpG may therefore occur multiple times where concordance has been estimated between
-the same peripheral tissue and multiple brain regions, or under different analytical
-conditions.
-
-For example, a study may report separate correlations between blood DNAm and DNAm in:
-
-- prefrontal cortex;
-- entorhinal cortex;
-- superior temporal gyrus; and
-- cerebellum.
-
-These represent distinct cross-tissue estimates and are retained separately.
-
-Accordingly, a CpG identifier alone does not uniquely identify a database observation.
-The identifying fields additionally include the contributing dataset, tissue comparison
-and, where relevant, analytical specification.
-
-### Data retained
-
-For each CpG-level observation, TRACE-CpG will retain, where available:
-
-- CpG identifier;
-- gene annotation;
-- chromosome and genomic position;
-- genic annotation;
-- CpG-island context;
-- source study;
-- dataset or resource name;
-- DOI and/or PMID;
-- sample size;
-- brain region;
-- harmonised brain-region category;
-- peripheral tissue;
-- harmonised peripheral-tissue category;
-- tissue pair;
-- correlation coefficient;
-- correlation metric;
-- P-value and/or adjusted P-value;
-- source-data scope (e.g. genome-wide, filtered or statistically selected);
-- original CpG-selection or concordance definition;
-- methylation platform;
-- live versus postmortem brain tissue;
-- population characteristics, where available;
-- analytical adjustment information, where available; and
-- transformations or harmonisation applied within TRACE-CpG.
-
-Additional study-, sample-, CpG- or analysis-level variables may be incorporated where
-available and relevant to the interpretation, harmonisation or subsequent analysis of
-cross-tissue DNAm concordance.
-
-Original source information is retained to allow individual observations to be traced
-to the contributing study or dataset.
-
-### Complete and filtered datasets
-
-Where complete or substantially complete CpG-level correlation matrices are available,
-all eligible correlation estimates are retained irrespective of correlation magnitude
-or statistical significance.
-
-Some published resources provide only subsets of CpGs selected according to statistical,
-variability or other criteria. These datasets remain eligible, but their selection status
-is explicitly recorded.
-
-Prespecified correlation thresholds are therefore used for derived classifications and
-analyses rather than as general inclusion criteria for the master database.
-
 ---
-
-## Currently identified cross-tissue resources
-
-The initial development of TRACE-CpG has been informed by published matched-tissue
-resources including:
-
-- **Hannon E, et al. (2015).** *Epigenetics*, 10(11), 1024–1032.
-  DOI: 10.1080/15592294.2015.1100786
-
-- **Edgar RD, et al. (2017).** *Translational Psychiatry*, 7, e1187.
-  DOI: 10.1038/tp.2017.171
-
-- **Braun PR, et al. (2019).** *Translational Psychiatry*, 9, 47.
-  DOI: 10.1038/s41398-019-0376-y
-
-- **Sommerer Y, et al. (2022).** *Clinical Epigenetics*, 14, 139.
-  DOI: 10.1186/s13148-022-01357-w
-
-- **Nishitani S, et al. (2023).** *Translational Psychiatry*, 13, 72.
-  DOI: 10.1038/s41398-023-02370-0
-
-This list describes resources identified during initial development and should not be
-interpreted as the final set of studies eligible for TRACE-CpG. Final inclusion is
-determined through the systematic screening workflow.
-
----
-
-## Prototype resource
-
-The current repository contains a **developmental prototype** of the TRACE-CpG database
-and web application.
-
-The prototype was assembled from a subset of published resources to establish and test:
-
-- data structures;
-- tissue and brain-region harmonisation;
-- CpG annotation;
-- visualisation approaches;
-- database querying;
-- data extraction procedures; and
-- the interactive application architecture.
-
-The prototype should therefore not be interpreted as the final systematically identified
-TRACE-CpG evidence base.
 
 ## Data Acquisition Scripts 
 ### Automated literature identification and screening
