@@ -14,9 +14,10 @@ be obtained from NCBI GEO.
 
 ___
 
-**TRACE-CpG** is an open, version-controlled resource for systematically identifying,
-harmonising and analysing CpG-level DNA methylation (DNAm) concordance between
-matched human brain and peripheral tissues.
+# TRACE-CpG:
+**TRACE-CpG**: **T**issue **R**eference-database for **A**nalysing **C**oncordant-**T**issue **E**pigenetics
+
+There is currently no unified, curated resource that systematically collates published evidence on cross-tissue DNA methylation concordance at individual CpG sites. This project seeks to systemically review this research landscape and develop a harmonised and versioned database of published brain-peripheral DNA methylation measured from matched individuals, designed to be reproducibly updated as new studies become available.
 
 The project brings together currently fragmented cross-tissue DNAm resources into a
 common database, enabling comparison of concordance estimates across studies,
@@ -30,6 +31,31 @@ The TRACE-CpG project will involve:
 4. analyses of the magnitude, tissue specificity and reproducibility of cross-tissue
    DNAm concordance; and
 5. an interactive web application for querying and visualising the resulting resource.
+
+## Repositry
+
+This repository aims to curate a database of all published CpG-site correlations between peripheral tissues (blood, buccal) and brain regions (prefrontal cortex, superior temporal gyrus, entorhinal cortex, cerebellum), compiled from published cross-tissue methylation studies to date. At present the prototype database is built from published correlations from the following studies:
+
+- Hannon E, et al. (2015). *Epigenetics*, **10**(11), 1024–1032. DOI: [10.1080/15592294.2015.1100786](https://doi.org/10.1080/15592294.2015.1100786)
+
+- Edgar RD, et al. (2017). *Translational Psychiatry*, **7**, e1187. DOI: [10.1038/tp.2017.171](https://doi.org/10.1038/tp.2017.171)
+
+- Braun PR, et al. (2019). *Translational Psychiatry*, **9**, 47. DOI: [10.1038/s41398-019-0376-y](https://doi.org/10.1038/s41398-019-0376-y)
+
+- Sommerer Y, et al. (2022). *Clinical Epigenetics*, **14**, 118. DOI: [10.1186/s13148-022-01357-w](https://doi.org/10.1186/s13148-022-01357-w)
+
+- Nishitani S, et al. (2023). *Translational Psychiatry*, **13**, 72. DOI: [10.1038/s41398-023-02370-0](https://doi.org/10.1038/s41398-023-02370-0)
+
+
+
+<p align="left">
+  <img src="Figures/glass_brain.png" width="800">
+</p>
+
+<p align="left">
+<b>Figure 1.</b> Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified searchable database and interactive web application.
+</p>
+
 
 ## Scientific rationale
 
@@ -181,37 +207,6 @@ The prototype was assembled from a subset of published resources to establish an
 
 The prototype should therefore not be interpreted as the final systematically identified
 TRACE-CpG evidence base.
-
-# TRACE-CpG:
-**TRACE-CpG**: **T**issue **R**eference-database for **A**nalysing **C**oncordant-**T**issue **E**pigenetics
-
-There is currently no unified, curated resource that systematically collates published evidence on cross-tissue DNA methylation concordance at individual CpG sites. This project seeks to systemically review this research landscape and develop a harmonised and versioned database of published brain-peripheral DNA methylation measured from matched individuals, designed to be reproducibly updated as new studies become available.
-
-The objective is to collate findings from published work that report correlations between DNAm measured in a peripheral tissue (e.g. blood, saliva) and brain tissue (e.g. as obtained from postmortem or biopsy samples). These genome-wide brain-peripheral DNA methylation concordance findings will then be aggregated into an openly available version-controlled database. 
-
-## Repositry
-
-This repository aims to curate a database of all published CpG-site correlations between peripheral tissues (blood, buccal) and brain regions (prefrontal cortex, superior temporal gyrus, entorhinal cortex, cerebellum), compiled from published cross-tissue methylation studies to date. At present the prototype database is built from published correlations from the following studies:
-
-- Hannon E, et al. (2015). *Epigenetics*, **10**(11), 1024–1032. DOI: [10.1080/15592294.2015.1100786](https://doi.org/10.1080/15592294.2015.1100786)
-
-- Edgar RD, et al. (2017). *Translational Psychiatry*, **7**, e1187. DOI: [10.1038/tp.2017.171](https://doi.org/10.1038/tp.2017.171)
-
-- Braun PR, et al. (2019). *Translational Psychiatry*, **9**, 47. DOI: [10.1038/s41398-019-0376-y](https://doi.org/10.1038/s41398-019-0376-y)
-
-- Sommerer Y, et al. (2022). *Clinical Epigenetics*, **14**, 118. DOI: [10.1186/s13148-022-01357-w](https://doi.org/10.1186/s13148-022-01357-w)
-
-- Nishitani S, et al. (2023). *Translational Psychiatry*, **13**, 72. DOI: [10.1038/s41398-023-02370-0](https://doi.org/10.1038/s41398-023-02370-0)
-
-
-
-<p align="left">
-  <img src="Figures/glass_brain.png" width="800">
-</p>
-
-<p align="left">
-<b>Figure 1.</b> Overview of the CpG Concordance Database. Published brain–peripheral DNA methylation concordance resources were harmonised into a unified searchable database and interactive web application.
-</p>
 
 ## Data Acquisition Scripts 
 ### Automated literature identification and screening
