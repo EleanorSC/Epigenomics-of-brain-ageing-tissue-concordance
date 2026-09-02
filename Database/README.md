@@ -4,6 +4,41 @@ A prototype version of this Shiny application has been developed using a small s
 
 Development of this prototype precedes the initiation of the systematic formal extraction and is being used to inform the screening criteria, data-extraction and harmonisation steps of the project.
 
+## Scientific rationale for TRACE-CpG database
+
+DNA methylation is strongly tissue- and cell-type-dependent, yet peripheral tissues
+such as blood, saliva and buccal samples are frequently used in human studies of
+brain-related phenotypes because brain tissue is generally inaccessible in living
+individuals.
+
+Several studies have therefore measured DNAm in matched brain and peripheral tissues
+and estimated CpG-level cross-tissue correlations. Existing resources differ in their
+sample populations, peripheral tissues, brain regions, methylation platforms,
+pre-processing pipelines, correlation metrics, adjustment procedures and criteria for
+reporting CpGs.
+
+TRACE-CpG aims to systematically identify these studies and harmonise their CpG-level
+results into a common database from which secondary analyses can be performed. 
+This enables the published evidence base to be comprehensively characterised, 
+including the extent to which apparent cross-tissue concordance
+is reproducible across independent datasets and tissue comparisons.
+
+## TRACE-CpG database scope
+
+Studies are considered for TRACE-CpG where they provide DNAm data from
+matched human brain and peripheral tissue samples and either:
+
+- report CpG-level cross-tissue concordance statistics; or
+- provide sufficiently complete CpG-by-sample methylation data and sample metadata
+  for CpG-level concordance to be derived.
+
+Peripheral tissues may include blood, saliva, buccal tissue and other accessible
+non-brain tissues where eligible data are identified. Brain samples may include postmortem or surgically resected tissue and may represent
+different anatomical regions. Both array-based and sequencing-based methylation studies are eligible where the
+required CpG-level information can be obtained.
+
+---
+
 
 ### Database of CpG–Brain Peripheral Correlations
 
