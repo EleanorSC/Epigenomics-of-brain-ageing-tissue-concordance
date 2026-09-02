@@ -12,6 +12,192 @@ for the applicable terms of use.
 Any downloaded GEO datasets are not redistributed with this repository and must
 be obtained from NCBI GEO.
 
+___
+
+**TRACE-CpG** is an open, version-controlled resource for systematically identifying,
+harmonising and analysing CpG-level DNA methylation (DNAm) concordance between
+matched human brain and peripheral tissues.
+
+The project brings together currently fragmented cross-tissue DNAm resources into a
+common database, enabling comparison of concordance estimates across studies,
+peripheral tissues, brain regions and DNAm platforms.
+
+The TRACE-CpG project will involve:
+
+1. a systematic identification and screening workflow for eligible studies and datasets;
+2. a harmonised CpG-level database of brain–peripheral DNAm concordance estimates;
+3. reproducible pipelines for data acquisition, processing, annotation and analysis;
+4. analyses of the magnitude, tissue specificity and reproducibility of cross-tissue
+   DNAm concordance; and
+5. an interactive web application for querying and visualising the resulting resource.
+
+## Scientific rationale
+
+DNA methylation is strongly tissue- and cell-type-dependent, yet peripheral tissues
+such as blood, saliva and buccal samples are frequently used in human studies of
+brain-related phenotypes because brain tissue is generally inaccessible in living
+individuals.
+
+Several studies have therefore measured DNAm in matched brain and peripheral tissues
+and estimated CpG-level cross-tissue correlations. Existing resources differ in their
+sample populations, peripheral tissues, brain regions, methylation platforms,
+pre-processing pipelines, correlation metrics, adjustment procedures and criteria for
+reporting CpGs.
+
+TRACE-CpG aims to systematically identify these studies and harmonise their CpG-level
+results into a common database from which secondary analyses can be performed. 
+This enables the published evidence base to be comprehensively characterised, 
+including the extent to which apparent cross-tissue concordance
+is reproducible across independent datasets and tissue comparisons.
+
+## Scope
+
+Studies are considered for TRACE-CpG where they provide genome-wide DNAm data from
+matched human brain and peripheral tissue samples and either:
+
+- report CpG-level cross-tissue concordance statistics; or
+- provide sufficiently complete CpG-by-sample methylation data and sample metadata
+  for CpG-level concordance to be derived.
+
+Peripheral tissues may include blood, saliva, buccal tissue and other accessible
+non-brain tissues where eligible data are identified.
+
+Brain samples may include postmortem or surgically resected tissue and may represent
+different anatomical regions.
+
+Both array-based and sequencing-based methylation studies are eligible where the
+required CpG-level information can be obtained.
+
+## TRACE-CpG database
+
+### Unit of observation
+
+The fundamental observation in TRACE-CpG is a **CpG × tissue-comparison estimate**.
+
+A CpG may therefore occur multiple times where concordance has been estimated between
+the same peripheral tissue and multiple brain regions, or under different analytical
+conditions.
+
+For example, a study may report separate correlations between blood DNAm and DNAm in:
+
+- prefrontal cortex;
+- entorhinal cortex;
+- superior temporal gyrus; and
+- cerebellum.
+
+These represent distinct cross-tissue estimates and are retained separately.
+
+Accordingly, a CpG identifier alone does not uniquely identify a database observation.
+The identifying fields additionally include the contributing dataset, tissue comparison
+and, where relevant, analytical specification.
+
+### Data retained
+
+For each CpG-level observation, TRACE-CpG will retain, where available:
+
+- CpG identifier;
+- gene annotation;
+- chromosome and genomic position;
+- genic annotation;
+- CpG-island context;
+- source study;
+- dataset or resource name;
+- DOI and/or PMID;
+- sample size;
+- brain region;
+- harmonised brain-region category;
+- peripheral tissue;
+- harmonised peripheral-tissue category;
+- tissue pair;
+- correlation coefficient;
+- correlation metric;
+- P-value and/or adjusted P-value;
+- source-data scope (e.g. genome-wide, filtered or statistically selected);
+- original CpG-selection or concordance definition;
+- methylation platform;
+- live versus postmortem brain tissue;
+- population characteristics, where available;
+- analytical adjustment information, where available; and
+- transformations or harmonisation applied within TRACE-CpG.
+
+Additional study-, sample-, CpG- or analysis-level variables may be incorporated where
+available and relevant to the interpretation, harmonisation or subsequent analysis of
+cross-tissue DNAm concordance.
+
+Original source information is retained to allow individual observations to be traced
+to the contributing study or dataset.
+
+### Published and TRACE-derived estimates
+
+Where possible, TRACE-CpG distinguishes between:
+
+- **source-reported estimates** — concordance statistics reported by the original
+  investigators; and
+- **TRACE-derived estimates** — concordance statistics calculated from publicly
+  available CpG-by-sample methylation data using a documented TRACE-CpG workflow.
+
+The original analytical definition and processing status are retained so that estimates
+generated under different pipelines are not assumed to be directly equivalent.
+
+### Complete and filtered datasets
+
+Where complete or substantially complete CpG-level correlation matrices are available,
+all eligible correlation estimates are retained irrespective of correlation magnitude
+or statistical significance.
+
+Some published resources provide only subsets of CpGs selected according to statistical,
+variability or other criteria. These datasets remain eligible, but their selection status
+is explicitly recorded.
+
+Prespecified correlation thresholds are therefore used for derived classifications and
+analyses rather than as general inclusion criteria for the master database.
+
+---
+
+## Currently identified cross-tissue resources
+
+The initial development of TRACE-CpG has been informed by published matched-tissue
+resources including:
+
+- **Hannon E, et al. (2015).** *Epigenetics*, 10(11), 1024–1032.
+  DOI: 10.1080/15592294.2015.1100786
+
+- **Edgar RD, et al. (2017).** *Translational Psychiatry*, 7, e1187.
+  DOI: 10.1038/tp.2017.171
+
+- **Braun PR, et al. (2019).** *Translational Psychiatry*, 9, 47.
+  DOI: 10.1038/s41398-019-0376-y
+
+- **Sommerer Y, et al. (2022).** *Clinical Epigenetics*, 14, 139.
+  DOI: 10.1186/s13148-022-01357-w
+
+- **Nishitani S, et al. (2023).** *Translational Psychiatry*, 13, 72.
+  DOI: 10.1038/s41398-023-02370-0
+
+This list describes resources identified during initial development and should not be
+interpreted as the final set of studies eligible for TRACE-CpG. Final inclusion is
+determined through the systematic screening workflow.
+
+---
+
+## Prototype resource
+
+The current repository contains a **developmental prototype** of the TRACE-CpG database
+and web application.
+
+The prototype was assembled from a subset of published resources to establish and test:
+
+- data structures;
+- tissue and brain-region harmonisation;
+- CpG annotation;
+- visualisation approaches;
+- database querying;
+- data extraction procedures; and
+- the interactive application architecture.
+
+The prototype should therefore not be interpreted as the final systematically identified
+TRACE-CpG evidence base.
+
 # TRACE-CpG:
 **TRACE-CpG**: **T**issue **R**eference-database for **A**nalysing **C**oncordant-**T**issue **E**pigenetics
 
