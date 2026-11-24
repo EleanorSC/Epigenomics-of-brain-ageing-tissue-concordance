@@ -1,4 +1,4 @@
-# TRACE CpG: cross-tissue DNA methylation concordance in human brain and peripheral tissue samples
+# Cross-tissue DNA methylation concordance in human brain and peripheral tissue samples
 
 ## Licensing
 
